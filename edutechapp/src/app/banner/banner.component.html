@@ -1,0 +1,141 @@
+<div class="container-fluid p-0 m-0">
+    <div class="jumbotron">
+    <div class="container">
+        <h3 class="display-3">welcome! to edutech</h3>
+        <p>the world of books</p>
+        <a routerLink="/signup" routerLinkActive="active"  class="btn-outline-dark btn m-3">signup</a>
+        <button routerLink="/login" routerLinkActive="active" class="btn-outline-dark btn">login </button>
+
+    </div>
+    </div>
+</div>
+<!--cards-->
+<div class="container">
+    <div class="row mb-2">
+        <div class="col-md-3">
+            <div class="card">
+                <img class="card-img-top" src="assets/images/download.jpg" alt="secret logo" height="380px">
+                <div class="card-body">
+                  <h5 class="card-title">secret</h5>
+                  <div *ngIf="isShown1" class="row container-fluid" id="divshow1">
+                  <p class="card-text">I read this book and seriously it is one of the best book i ever read.
+
+                    This book is all about the “law of attraction”. Whatever is going around you is only the reflection of your thoughts. This law of attraction will work only when you think positive.
+                    
+                    Everything is in your hand. You desires something and think about that then believe me one day that will happens with you if your thoughts are positive.
+                    
+                    You only have to believe yourself and you will receive the best at last.
+                    
+                    Everyone should read this book. It is awesome.</p></div>
+                  <button (click)="toggleShow1()" class="btn btn-primary">show more</button>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img class="card-img-top" src="assets/images/download2.jpg" alt="logo">
+                <div class="card-body">
+                  <h5 class="card-title">the book of names</h5>
+                  <div *ngIf="isShown2" class="row container-fluid" id="divshow2">
+                  <p class="card-text">This book was good but not spectacular. It's a similar style to the DaVinci Code - all about Adam's book of names and the battle to save the Lamad Vovniks. The conspiracy and mystery was not as deep and thorough as I would have liked, so it ended up being a relatively quick read. Still worth the effort, but probably not one to place at the very top of your to-read pile.</p>
+                 </div>
+                  <a (click)="toggleShow2()" class="btn btn-primary">show more</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img class="card-img-top" src="assets/images/download3.jpg" alt="logo">
+                <div class="card-body">
+                  <h5 class="card-title">my name is memory</h5>
+                  <div *ngIf="isShown3" class="row container-fluid" id="divshow3">
+                  <p class="card-text">I am in love with this story and that cannot be how it ends! Please make a sequel to it.The story is incredibly beautiful and them to find each other and seperate and her big secret at the end....hello come on I need to know the real ending of how their story ends.</p>
+                  </div>
+                  <a (click)="toggleShow3()" class="btn btn-primary">show more</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img class="card-img-top" src="assets/images/download4.jpg" alt="logo">
+                <div class="card-body">
+                  <h5 class="card-title">nirmala</h5>
+                  <div *ngIf="isShown4" class="row container-fluid" id="divshow4">
+                  <p class="card-text">Rich in conversations, this book is anti-cliche.
+                    1. In arranging a girl's marriage, dowry is not the biggest problem.
+                    2. There is no friction between Sauteli Maa-beta. Albeit over abundance of love!
+                    In spite of this, it is a depressing tale of young and mature Nirmala who is married to an immature old man double her age with 3 sons.
+                    And it has far more twists and turns than anticipated. A gripping page turner. Very interesting story.</p>
+                </div>
+                    <a (click)="toggleShow4()" class="btn btn-primary">show more</a>
+
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card">
+                <img class="card-img-top" src="assets/images/download5.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">five point someone</h5>
+                  <div *ngIf="isShown5" class="row container-fluid" id="divshow5">
+                  <p class="card-text">I really enjoyed this book because the characters are so real, and being a student myself I can relate to their pressure. There are many hilarious episodes, including where Ryan changes a few key words in a speech to be given by a competitor named Chatur. This makes the speech outrageous and bringing the house down with laughter. Five Point Someone also deals with the serious issue of stress in school, and student’s creativity being stifled.</p>
+                </div>
+                  <a (click)="toggleShow5()" class="btn btn-primary">show more</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img class="card-img-top" src="assets/images/download6.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">kayakalp</h5>
+                  <a (click)="toggleShow6()" class="btn btn-primary">show more</a>
+                  <div *ngIf="isShown6" class="row container-fluid" id="divshow6">
+                  <div class="card-text">one of the best book ....................</div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img class="card-img-top" src="assets/images/download7.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">2 states</h5>
+                  <a (click)="toggleShow7()" class="btn btn-primary">show more</a>
+                  <div *ngIf="isShown7" class="row container-fluid" id="divshow7">
+                  <div class="card-text">This is one of the best seller book of Chetan Bhagat. 
+                    I hace read this books two times. It is based on real life story of Chetan Bhagat,
+                     Chetan Bhagat’s Books are basically combination of some fiction and real story 
+                     that attract any reader easily and attach him with its life’s experience.
+
+                  </div>
+                 
+                </div>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img class="card-img-top" src="assets/images/download8.jpg" alt="Card image cap">
+                <div class="card-body">
+               <h5 class="card-title">half girlfriend</h5>
+              <button (click)="toggleShow8()" class="btn btn-primary">show more</button>
+              <div *ngIf="isShown8" class="row container-fluid" id="divshow8">
+               <div  class="card-text" >
+                   Book dint overwhelm me at all. 
+                    Infact it is too commerical. Bhagat have included almost all trending events from internet
+                     in the book like steve jobs stanford speech, stay hungry stay foolish, whatsapp, 
+                     bill gates etc. Interesting thing, whatsapp launched in 2009 and he mentions whatsapp in
+                      2008 event in his book. LOL.
+                </div>
+                </div>
+                </div>
+        </div>
+        </div>
+    </div>
+</div>
+
